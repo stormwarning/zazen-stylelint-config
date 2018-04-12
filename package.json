@@ -13,6 +13,12 @@
     "lint:scripts": "prettier-eslint '**/*.js' --write --list-different",
     "test": "npm run lint"
   },
+  "dependencies": {
+    "stylelint-order": "^0.8.1"
+  },
+  "peerDependencies": {
+    "stylelint": ">=9"
+  },
   "devDependencies": {
     "@zazen/eslint-config": "^0.1.1",
     "husky": "^0.14.3",
@@ -25,15 +31,11 @@
     "remark-toc": "~4.0.1"
   },
   "keywords": [
-    "zazen-stylelint-config"
+    "stylelint-config"
   ],
   "lint-staged": {
     "*.{js|json}": [
       "prettier-eslint --list-different",
-      "git add"
-    ],
-    "*.md": [
-      "remark . -qo",
       "git add"
     ]
   },
