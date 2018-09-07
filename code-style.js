@@ -47,7 +47,13 @@ module.exports = {
         'at-rule-name-case': 'lower',
         'at-rule-name-space-after': 'always-single-line',
 
-        'comment-empty-line-before': 'always',
+        'comment-empty-line-before': [
+            'always',
+            {
+                except: ['first-nested'],
+                ignore: ['after-comment', 'stylelint-commands'],
+            },
+        ],
         'comment-whitespace-inside': 'always',
 
         'max-empty-lines': 4,
