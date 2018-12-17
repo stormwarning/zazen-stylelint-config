@@ -1,8 +1,9 @@
 module.exports = {
     plugins: ['stylelint-order'],
     extends: [
+        '.identify-errors.js',
+        './language-features.js',
         './code-style.js',
-        './best-practices.js',
         'stylelint-config-recess-order',
     ],
     rules: {},
