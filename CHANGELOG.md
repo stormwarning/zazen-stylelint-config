@@ -5,6 +5,19 @@
 
 All notable changes to this project will be documented in this file.
 
+<a name="1.0.0"></a>
+
+## [1.0.0](https://github.com/stormwarning/zazen-stylelint-config/compare/v0.2.0...v1.0.0) — 2018-12-19
+
+### Added
+
+- 🎁 Update linting rules ([#3](https://github.com/stormwarning/zazen-stylelint-config/issues/3)) ([87618f4](https://github.com/stormwarning/zazen-stylelint-config/commit/87618f4))
+
+
+### BREAKING CHANGES
+
+- Adds some new rules — including new optional rules for Sass — and removes a few. Partials are renamed to match [Stylelint's categories](https://stylelint.io/VISION/) and `stylelint-config-recommended` is used as a baseline.
+
 ## 0.2.0 — 2018-09-07
 
 ### Added
