@@ -5,7 +5,7 @@
   "author": "Jeff <rustyangel@gmail.com> (https://tidaltheory.co)",
   "homepage": "https://github.com/stormwarning/zazen-stylelint-config",
   "repository": "stormwarning/zazen-stylelint-config",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "scripts": {
     "precommit": "lint-staged && npm test",
     "lint": "npm-run-all lint:*",
