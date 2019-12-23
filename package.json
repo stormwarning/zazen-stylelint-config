@@ -32,7 +32,7 @@
     "remark-github": "^7.0.5",
     "remark-preset-lint-markdown-style-guide": "^2.1.2",
     "remark-toc": "^5.1.1",
-    "semantic-release": "^15.13.1"
+    "semantic-release": "^15.14.0"
   },
   "keywords": [
     "stylelint-config"
