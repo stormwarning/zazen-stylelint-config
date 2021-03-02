@@ -1,5 +1,16 @@
 # Change Log
 
+## 2.0.0
+
+### Major Changes
+
+- [`0ebb4c8`](https://github.com/stormwarning/zazen-stylelint-config/commit/0ebb4c82ec1788748c30633b8868ecd791b3e420) Thanks [@stormwarning](https://github.com/stormwarning)! - Bumps extended configs to their latest version
+
+  `stylelint-config-recommended` 2.1.0 → 3.0.0
+  `stylelint-order` 2.0.0 → 4.1.0
+
+  Also updates the CI and release workflow and config
+
 ## 1.0.0 — 2018-12-19
 
 #### 💣 Breaking
