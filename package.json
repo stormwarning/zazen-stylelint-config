@@ -1,42 +1,20 @@
 {
   "name": "@zazen/stylelint-config",
-  "description": "Lint CSS, free of weariness and confusion",
-  "license": "ISC",
-  "author": "Jeff <rustyangel@gmail.com> (https://tidaltheory.co)",
-  "homepage": "https://github.com/stormwarning/zazen-stylelint-config",
-  "repository": "stormwarning/zazen-stylelint-config",
   "version": "1.0.0",
-  "scripts": {
-    "precommit": "lint-staged && npm test",
-    "lint": "npm-run-all lint:*",
-    "lint:markdown": "remark .",
-    "lint:scripts": "prettier-eslint '**/*.js' --list-different",
-    "semantic-release": "semantic-release",
-    "test": "npm run lint"
-  },
-  "dependencies": {
-    "stylelint-config-recess-order": "^2.3.0",
-    "stylelint-config-recommended": "^2.1.0",
-    "stylelint-order": "^2.0.0"
-  },
-  "peerDependencies": {
-    "stylelint": ">=9"
-  },
-  "devDependencies": {
-    "@zazen/eslint-config": "^0.3.0",
-    "@zazen/semantic-release": "^0.1.1",
-    "husky": "^1.3.0",
-    "lint-staged": "^8.1.0",
-    "npm-run-all": "^4.1.5",
-    "remark-cli": "^6.0.1",
-    "remark-github": "^7.0.5",
-    "remark-preset-lint-markdown-style-guide": "^2.1.2",
-    "remark-toc": "^5.1.1",
-    "semantic-release": "^15.13.1"
-  },
+  "description": "Lint CSS, free of weariness and confusion",
   "keywords": [
     "stylelint-config"
   ],
+  "homepage": "https://github.com/stormwarning/zazen-stylelint-config",
+  "repository": "stormwarning/zazen-stylelint-config",
+  "license": "ISC",
+  "author": "Jeff (https://tidaltheory.io)",
+  "scripts": {
+    "changeset": "changeset add",
+    "lint": "eslint '**/*.js'",
+    "release": "changeset publish",
+    "test": "npm run lint"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -44,35 +22,45 @@
   },
   "lint-staged": {
     "*.js": [
-      "prettier-eslint --write",
-      "git add"
+      "eslint --fix"
+    ],
+    "package.json": [
+      "prettier --write"
     ]
   },
-  "release": {
-    "extends": "@zazen/semantic-release"
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
   },
-  "remarkConfig": {
-    "plugins": [
-      "preset-lint-markdown-style-guide",
-      [
-        "lint-maximum-line-length",
-        false
-      ],
-      [
-        "lint-list-item-spacing",
-        false
-      ],
-      "github",
-      "toc"
-    ],
-    "settings": {
-      "commonmark": true,
-      "bullet": "-",
-      "listItemIndent": 1,
-      "rule": "-",
-      "ruleSpaces": false,
-      "strong": "*",
-      "emphasis": "*"
+  "dependencies": {
+    "stylelint-config-recess-order": "2.3.0",
+    "stylelint-config-recommended": "3.0.0",
+    "stylelint-order": "4.1.0"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "0.2.8",
+    "@changesets/cli": "2.14.x",
+    "@zazen/eslint-config": "2.2.x",
+    "eslint": "7.21.x",
+    "husky": "4.3.x",
+    "lint-staged": "10.5.x",
+    "prettier": "2.2.x",
+    "prettier-plugin-packagejson": "2.2.x"
+  },
+  "peerDependencies": {
+    "stylelint": ">=9"
+  },
+  "changelog": {
+    "repo": "stormwarning/zazen-eslint-config",
+    "labels": {
+      "breaking": "💣 Breaking Change",
+      "removed": "🗑️ Removed",
+      "deprecated": "🚚 Deprecated",
+      "changed": "♻️ Changed",
+      "added": "🎁 Added",
+      "fixed": "🐛 Fixed",
+      "security": "🔒 Security"
     }
   }
 }
