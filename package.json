@@ -43,7 +43,7 @@
     "@changesets/cli": "2.14.x",
     "@zazen/eslint-config": "2.2.x",
     "eslint": "7.21.x",
-    "husky": "4.3.x",
+    "husky": "6.0.x",
     "lint-staged": "10.5.x",
     "prettier": "2.2.x",
     "prettier-plugin-packagejson": "2.2.x"
