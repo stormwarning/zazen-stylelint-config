@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "stylelint-config-recess-order": "2.3.0",
-    "stylelint-config-recommended": "3.0.0",
+    "stylelint-config-recommended": "6.0.0",
     "stylelint-order": "4.1.0"
   },
   "devDependencies": {
