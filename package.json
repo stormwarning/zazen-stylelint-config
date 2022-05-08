@@ -31,9 +31,8 @@
     "trailingComma": "all"
   },
   "dependencies": {
-    "stylelint-config-recess-order": "2.3.0",
-    "stylelint-config-recommended": "3.0.0",
-    "stylelint-order": "4.1.0"
+    "stylelint-config-recess-order": "3.0.0",
+    "stylelint-config-recommended": "3.0.0"
   },
   "devDependencies": {
     "@changesets/changelog-github": "0.2.8",
@@ -46,7 +45,7 @@
     "prettier-plugin-packagejson": "2.2.17"
   },
   "peerDependencies": {
-    "stylelint": ">=9"
+    "stylelint": ">=14"
   },
   "changelog": {
     "repo": "stormwarning/zazen-stylelint-config",
