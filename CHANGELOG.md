@@ -1,12 +1,11 @@
 # Change Log
 
-## 3.0.0
+## 3.0.0 — 2022-05-07
 
-### Major Changes
+#### 💣 Breaking
 
-- [`f637c27`](https://github.com/stormwarning/zazen-stylelint-config/commit/f637c27343f5664298d4223d5435f77d94d74e10) Thanks [@stormwarning](https://github.com/stormwarning)! - Upgrade `recommended` config to latest
-
-* [`74491fa`](https://github.com/stormwarning/zazen-stylelint-config/commit/74491fa3f01b3dd4fc80c6baa10520316ecac39d) [#175](https://github.com/stormwarning/zazen-stylelint-config/pull/175) Thanks [@stormwarning](https://github.com/stormwarning)! - Upgrade `recess-order` config to latest
+- Upgrade `recommended` config to latest [`f637c27`](https://github.com/stormwarning/zazen-stylelint-config/commit/f637c27343f5664298d4223d5435f77d94d74e10)
+- Upgrade `recess-order` config to latest [#175](https://github.com/stormwarning/zazen-stylelint-config/pull/175)
 
   The minimum supported version of Stylelint is now >=14; the peerDependencies of this config have been updated to match.
 
