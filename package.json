@@ -12,17 +12,14 @@
   "scripts": {
     "changeset": "changeset add",
     "lint": "eslint '**/*.js'",
+    "prepare": "husky install",
     "release": "changeset publish",
     "test": "npm run lint"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.js": [
-      "eslint --fix"
+      "eslint --fix",
+      "prettier --write"
     ],
     "package.json": [
       "prettier --write"
@@ -40,19 +37,19 @@
   },
   "devDependencies": {
     "@changesets/changelog-github": "0.2.8",
-    "@changesets/cli": "2.14.x",
-    "@zazen/eslint-config": "2.2.x",
-    "eslint": "7.21.x",
-    "husky": "4.3.x",
-    "lint-staged": "10.5.x",
-    "prettier": "2.2.x",
-    "prettier-plugin-packagejson": "2.2.x"
+    "@changesets/cli": "2.22.0",
+    "@zazen/eslint-config": "5.1.0",
+    "eslint": "8.15.0",
+    "husky": "7.0.4",
+    "lint-staged": "12.4.1",
+    "prettier": "2.6.2",
+    "prettier-plugin-packagejson": "2.2.17"
   },
   "peerDependencies": {
     "stylelint": ">=9"
   },
   "changelog": {
-    "repo": "stormwarning/zazen-eslint-config",
+    "repo": "stormwarning/zazen-stylelint-config",
     "labels": {
       "breaking": "💣 Breaking Change",
       "removed": "🗑️ Removed",
